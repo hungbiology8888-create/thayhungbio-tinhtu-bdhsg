@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bộ tài liệu BDHSG Tinh Tú</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<style>
+:root{--bg:#f5f6fb;--surface:#fff;--surface-2:#eceef8;--ink:#171936;--ink-2:#51557a;--line:#dadef0;--hema:#33357a;--eosin:#d6366a;--gold:#f2b84b;--deep:#0e1030;--deep-2:#171a4a;--font-body:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;--font-head:'Source Serif 4',Georgia,serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0c0d24;--surface:#161840;--surface-2:#1e2152;--ink:#eef0ff;--ink-2:#a9aed6;--line:#2c3068;--hema:#b4b7ff;--eosin:#ff7ca8;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c0d24;--surface:#161840;--surface-2:#1e2152;--ink:#eef0ff;--ink-2:#a9aed6;--line:#2c3068;--hema:#b4b7ff;--eosin:#ff7ca8;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:16px;line-height:1.65;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0;overflow-x:hidden}
+.wrap{max-width:1120px;margin:0 auto}
+h1,h2,h3{font-family:var(--font-head);margin:0;line-height:1.15;text-wrap:balance}p{margin:0}a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}.rv.in{opacity:1;transform:none}.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+.heroBg{position:relative;margin-inline:calc(50% - 50vw);padding-inline:calc(50vw - 50%);background:radial-gradient(1100px 600px at 85% -10%,#3a2d8f,transparent 60%),var(--deep);color:#fff;overflow:hidden}
+.blob{position:absolute;border-radius:50%;filter:blur(70px);opacity:.5;animation:fl 14s ease-in-out infinite}.b1{width:360px;height:360px;background:#5b4de0;left:-90px;top:90px}.b2{width:300px;height:300px;background:#d6366a;right:6%;bottom:-70px;animation-delay:-5s}.b3{width:240px;height:240px;background:#f2b84b;left:48%;top:-90px;opacity:.22;animation-delay:-9s}
+@keyframes fl{50%{transform:translate(40px,-30px)}}
+#mol{position:absolute;inset:0;width:100%;height:100%;opacity:.5;pointer-events:none}
+.nav{position:relative;z-index:2;display:flex;align-items:center;justify-content:space-between;gap:14px;padding:20px 0;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;font-weight:700}.brand img{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.6)}.brand small{display:block;font-weight:500;font-size:12px;opacity:.7;letter-spacing:.04em}
+.nav ul{list-style:none;display:flex;gap:6px;margin:0;padding:0;flex-wrap:wrap}.nav li a{display:block;padding:8px 14px;border-radius:999px;text-decoration:none;font-size:14.5px;font-weight:500;opacity:.85}.nav li a:hover{background:rgba(255,255,255,.12);opacity:1}.nav li a.hot{background:#fff;color:var(--deep);opacity:1;font-weight:700}
+.hero{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:46px 0 96px}
+.pill{display:inline-flex;gap:8px;align-items:center;border:1px solid rgba(255,255,255,.28);background:rgba(255,255,255,.08);border-radius:999px;padding:6px 14px;font-size:13px;font-weight:500;margin-bottom:22px}.pill i{width:8px;height:8px;border-radius:50%;background:#52e0a1;animation:pu 2s infinite}@keyframes pu{70%{box-shadow:0 0 0 10px transparent}0%{box-shadow:0 0 0 0 #52e0a1}}
+.hero h1{font-size:clamp(34px,5.4vw,60px);font-weight:700;margin-bottom:20px}
+.grad{background:linear-gradient(90deg,#ffd27a,#ff7ca8 55%,#a79bff);-webkit-background-clip:text;background-clip:text;color:transparent;background-size:200% auto;animation:sh 6s linear infinite}@keyframes sh{to{background-position:200% center}}
+.lead{font-size:18px;opacity:.86;max-width:56ch}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.btn{font:inherit;font-weight:700;font-size:15px;padding:14px 24px;border-radius:12px;border:1.5px solid transparent;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:10px;line-height:1.2;transition:transform .2s}.btn:hover{transform:translateY(-2px)}
+.btn.main{background:linear-gradient(135deg,#ff7ca8,#d6366a);color:#fff;box-shadow:0 10px 26px -8px rgba(214,54,106,.7)}.btn.line{border-color:rgba(255,255,255,.4);color:#fff}.btn.line:hover{background:rgba(255,255,255,.1)}
+/* orbit */
+.orbit{position:relative;aspect-ratio:1;max-width:420px;margin:0 auto;width:100%}
+.orbit .core{position:absolute;inset:27%;border-radius:50%;background:radial-gradient(circle at 30% 25%,#8f84ff,#33357a 70%);display:grid;place-items:center;text-align:center;box-shadow:0 0 70px rgba(120,100,255,.6);border:2px solid rgba(255,255,255,.35)}
+.core b{font-family:var(--font-head);font-size:clamp(30px,5vw,46px);line-height:1;display:block}.core span{font-size:12px;opacity:.85;letter-spacing:.06em}
+.ring{position:absolute;inset:0;animation:spin 40s linear infinite}
+.ring i{position:absolute;left:50%;top:50%;width:46px;height:46px;margin:-23px;border-radius:50%;background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.4);display:grid;place-items:center;font-style:normal;font-weight:800;font-size:15px;backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.ring i span{display:block;animation:spin 40s linear infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stats{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:-54px;margin-bottom:84px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:20px 12px;text-align:center;box-shadow:0 20px 40px -26px rgba(20,20,80,.5)}.stat b{display:block;font-family:var(--font-head);font-size:38px;color:var(--hema);line-height:1;font-variant-numeric:tabular-nums}.stat span{font-size:13.5px;color:var(--ink-2)}
+.trust{max-width:820px;margin:0 auto 90px;text-align:center}.trust p{font-family:var(--font-head);font-size:clamp(21px,3vw,30px);line-height:1.35}.trust em{font-style:normal;color:var(--eosin)}
+section{margin-bottom:96px;scroll-margin-top:12px}
+.eyebrow{font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--eosin);margin-bottom:12px}
+.sec-head{max-width:64ch;margin-bottom:30px}.sec-head h2{font-size:clamp(28px,4vw,42px);margin-bottom:12px}.sec-head p{color:var(--ink-2)}
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:28px;transition:transform .3s,box-shadow .3s}.card:hover{transform:translateY(-6px);box-shadow:0 26px 40px -26px rgba(40,40,140,.55)}
+.card h3{font-size:21px;margin-bottom:8px}.card p{color:var(--ink-2);font-size:15.5px}
+.ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--surface-2);color:var(--hema);margin-bottom:16px}
+/* chuyen de */
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.f{font:inherit;font-weight:600;font-size:14px;padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink-2);cursor:pointer}.f[aria-pressed=true]{background:var(--hema);border-color:var(--hema);color:var(--surface)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.cd{position:relative;background:var(--surface);border:1.5px solid var(--line);border-radius:20px;padding:22px 22px 20px;cursor:pointer;transition:transform .3s,border-color .2s,box-shadow .3s;text-align:left;font:inherit;color:inherit;display:block;width:100%}
+.cd:hover{transform:translateY(-5px)}
+.cd[aria-pressed=true]{border-color:var(--eosin);box-shadow:0 0 0 3px color-mix(in srgb,var(--eosin) 22%,transparent)}
+.cd[hidden]{display:none}
+.num{font-family:var(--font-head);font-size:44px;font-weight:700;color:var(--surface-2);line-height:1;position:absolute;right:18px;top:12px;-webkit-text-stroke:1.5px var(--line);color:transparent}
+.vip{display:inline-block;font-size:11.5px;font-weight:800;letter-spacing:.08em;background:var(--eosin);color:#fff;border-radius:6px;padding:3px 9px;margin-bottom:10px}.vip.n{background:var(--surface-2);color:var(--ink-2)}
+.cd h3{font-size:20px;margin-bottom:4px;padding-right:44px}
+.cd .sub{font-size:13.5px;color:var(--ink-2);margin-bottom:16px;min-height:2.6em}
+.nums{display:flex;gap:22px;margin-bottom:12px}.nums b{display:block;font-family:var(--font-head);font-size:30px;color:var(--hema);line-height:1;font-variant-numeric:tabular-nums}.nums span{font-size:12.5px;color:var(--ink-2)}
+.bar{height:7px;background:var(--surface-2);border-radius:4px;overflow:hidden}.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),var(--eosin));border-radius:4px;transition:width 1.2s cubic-bezier(.2,.7,.2,1)}
+.pick{margin-top:14px;font-size:13px;font-weight:700;color:var(--hema);display:flex;align-items:center;gap:8px}.pick::before{content:"";width:18px;height:18px;border-radius:6px;border:2px solid var(--line);display:grid}
+.cd[aria-pressed=true] .pick::before{background:var(--eosin) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='4' stroke-linecap='round'%3E%3Cpath d='M5 12l5 5 9-10'/%3E%3C/svg%3E") center/12px no-repeat;border-color:var(--eosin)}
+.dock{position:sticky;bottom:14px;z-index:30;margin-top:22px;display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;background:var(--deep);color:#fff;border-radius:18px;padding:14px 150px 14px 22px;box-shadow:0 24px 50px -18px rgba(0,0,0,.6);transform:translateY(0);transition:opacity .3s}
+.dock b{font-family:var(--font-head);font-size:22px;color:#ffd27a}.dock span{font-size:14px;opacity:.85;display:block}
+.dock .btn{padding:11px 20px}
+/* viewer */
+.viewer{background:var(--deep);color:#fff;border-radius:24px;padding:clamp(16px,3vw,32px);position:relative;overflow:hidden}
+.viewer::before{content:"";position:absolute;width:420px;height:420px;border-radius:50%;background:#4f3fd8;filter:blur(110px);opacity:.4;right:-120px;top:-120px}
+.vtabs{position:relative;display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;margin-bottom:20px;scrollbar-width:thin}
+.vt{font:inherit;font-weight:600;font-size:14px;padding:10px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:transparent;color:#fff;cursor:pointer;white-space:nowrap;opacity:.8}.vt:hover{opacity:1}.vt[aria-selected=true]{background:#fff;color:var(--deep);opacity:1;border-color:#fff}
+.vbody{position:relative;display:grid;grid-template-columns:1fr 280px;gap:26px;align-items:start}
+.pagebox{max-width:600px;margin:0 auto;width:100%}
+.page{position:relative;aspect-ratio:1/1.3333;border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -24px #000;user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.page img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;-webkit-user-drag:none;transition:opacity .35s,transform .5s}
+.page.swap img{opacity:0;transform:scale(1.03)}
+.zoomlens{position:absolute;inset:0;cursor:zoom-in;z-index:3}
+.wm{position:absolute;inset:-40%;z-index:2;pointer-events:none;transform:rotate(-24deg);display:flex;flex-direction:column;gap:56px;justify-content:center}
+.wm div{display:flex;gap:70px;white-space:nowrap;font:800 26px var(--font-body);letter-spacing:.08em;color:rgba(51,53,122,.18);animation:wmL 14s linear infinite;width:max-content}.wm div:nth-child(even){animation-direction:reverse;color:rgba(214,54,106,.18)}
+@keyframes wmL{to{transform:translateX(-340px)}}
+.ribbon{position:absolute;left:0;right:0;z-index:4;pointer-events:none;top:0;height:42px;display:flex;align-items:center;background:linear-gradient(90deg,rgba(214,54,106,0),rgba(214,54,106,.9),rgba(214,54,106,0));color:#fff;font-weight:800;letter-spacing:.14em;font-size:14px;white-space:nowrap;overflow:hidden;animation:scan 7s ease-in-out infinite}
+.ribbon span{display:block;animation:rl 6s linear infinite;padding-left:100%}
+@keyframes rl{to{transform:translateX(-200%)}}@keyframes scan{0%,100%{top:2%}50%{top:90%}}
+.lock{position:absolute;inset:0;display:none;place-items:center;text-align:center;padding:20px;z-index:5;background:linear-gradient(180deg,rgba(14,16,48,.04),rgba(14,16,48,.18));color:#fff}
+.lock>div{background:rgba(14,16,48,.84);border:1px solid rgba(255,255,255,.2);border-radius:18px;padding:20px 22px;max-width:300px;box-shadow:0 20px 40px -12px rgba(0,0,0,.6)}
+.page.locked .lock{display:grid}
+.lock svg{width:40px;height:40px;margin-bottom:8px;color:var(--gold)}.lock b{font-family:var(--font-head);font-size:19px;display:block;margin-bottom:6px}.lock p{font-size:14px;opacity:.85;margin-bottom:14px}.lock a{background:#fff;color:var(--deep);padding:10px 18px;border-radius:10px;font-weight:700;text-decoration:none;font-size:14px}
+.page.shield img,.page.shield .wm{filter:blur(22px)}
+.shieldmsg{position:absolute;inset:0;display:none;place-items:center;z-index:6;background:rgba(14,16,48,.7);color:#fff;font-weight:700;text-align:center;padding:20px}.page.shield .shieldmsg{display:grid}
+.ctl{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}
+.ctl button{font:inherit;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.08);color:#fff;font-size:20px;cursor:pointer}.ctl button:hover{background:#fff;color:var(--deep)}
+.prog{flex:1;height:5px;background:rgba(255,255,255,.18);border-radius:3px;overflow:hidden}.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--gold),#ff7ca8);transition:width .4s}
+.cnt{font-size:13px;opacity:.75;min-width:64px;text-align:center;font-variant-numeric:tabular-nums}
+.side h3{font-size:24px;margin-bottom:6px;color:#fff}.side .vm{font-size:13px;color:#ffd27a;font-weight:700;margin-bottom:8px}.side .desc{opacity:.8;font-size:14.5px;margin-bottom:18px}
+.thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.th{position:relative;aspect-ratio:1/1.3333;border-radius:6px;overflow:hidden;border:2px solid transparent;padding:0;background:#222;cursor:pointer}.th img{width:100%;height:100%;object-fit:cover;display:block;pointer-events:none}.th.on{border-color:var(--gold)}
+.th.lk::after{content:"🔒";position:absolute;right:4px;bottom:4px;width:22px;height:22px;border-radius:50%;background:rgba(14,16,48,.85);display:grid;place-items:center;font-size:11px}
+.tips{margin:20px 0 0;padding:14px 16px;border-radius:12px;background:rgba(255,255,255,.07);font-size:13.5px;opacity:.9;border:1px dashed rgba(255,255,255,.25)}
+.legal{margin-top:18px;font-size:12.5px;opacity:.7;text-align:center;position:relative}
+.lb .inner{position:relative;max-height:92vh;max-width:min(92vw,900px);overflow:auto;border-radius:10px}
+.lb .inner .page{aspect-ratio:auto;width:min(92vw,900px)}.lb .inner img{position:relative;display:block;width:100%;height:auto;inset:auto}
+@media (max-width:900px){.vbody{grid-template-columns:1fr}.thumbs{grid-template-columns:repeat(6,1fr)}}
+@media (max-width:560px){.thumbs{grid-template-columns:repeat(4,1fr)}.wm div{font-size:20px}}
+/* audience */
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.aud .card h3{color:var(--hema)}
+/* contact */
+.contact{background:linear-gradient(135deg,var(--deep),var(--deep-2) 60%,#3a1f6a);color:#fff;border-radius:28px;padding:clamp(24px,5vw,56px);display:grid;grid-template-columns:1.1fr .9fr;gap:36px;position:relative;overflow:hidden}
+.contact::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;background:#d6366a;filter:blur(110px);opacity:.35;left:-80px;bottom:-120px}.contact>*{position:relative;z-index:1}
+.person{display:flex;align-items:center;gap:16px;margin-bottom:22px}.person img{width:84px;height:84px;border-radius:50%;object-fit:cover;border:3px solid #fff}.person b{font-family:var(--font-head);font-size:26px;display:block}.person span{opacity:.75;font-size:14px}
+.contact h2{font-size:clamp(28px,4vw,40px);margin-bottom:12px}.contact .lead{opacity:.85;max-width:50ch;font-size:16.5px}
+.chan{display:grid;gap:12px;margin-top:26px}
+.ch{display:flex;align-items:center;gap:14px;padding:16px 18px;border-radius:16px;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.07);transition:transform .2s,background .2s;cursor:pointer;font:inherit;color:#fff;text-align:left;width:100%}.ch:hover{transform:translateX(6px);background:rgba(255,255,255,.14)}
+.ch .logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;flex:none;font-weight:800}.ch.fb .logo{background:#1877f2}.ch.zl .logo{background:#0068ff;font-size:13px}.ch small{display:block;font-weight:400;opacity:.75;font-size:13px}.ch .arr{margin-left:auto;opacity:.7}
+.qrcard{background:#fff;color:#171936;border-radius:22px;padding:18px;text-align:center;max-width:320px;margin:0 auto;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}.qrcard img{width:100%;display:block;border-radius:12px}.qrcard p{margin-top:10px;font-size:14px;font-weight:600}.qrcard small{display:block;color:#51557a;font-weight:400;font-size:12.5px}
+footer{border-top:1px solid var(--line);padding:26px 0 44px;margin-top:84px;color:var(--ink-2);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.fab{position:fixed;right:max(16px,env(safe-area-inset-right,0px));bottom:16px;z-index:50;display:flex;gap:10px}.fab a{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-size:13px;text-decoration:none;box-shadow:0 12px 26px -8px rgba(0,0,0,.5)}.fab .f1{background:#1877f2}.fab .z{background:#0068ff}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(8,9,28,.88);display:none;place-items:center;padding:20px}.lb.open{display:grid}.lb .x{position:absolute;right:16px;top:14px;width:44px;height:44px;border-radius:50%;background:#fff;color:#111;border:0;font-size:22px;cursor:pointer}
+@media (max-width:900px){.hero{grid-template-columns:1fr;padding-bottom:70px}.orbit{max-width:300px}.why,.aud,.grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:600px){.dock{padding-right:18px}.why,.aud,.grid{grid-template-columns:1fr}.nav ul li:not(:last-child){display:none}.fab{bottom:84px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+
+.cs-wrap{position:relative;border-radius:28px;padding:clamp(24px,4vw,46px);background:var(--surface);border:1.5px solid var(--line);display:flex;gap:clamp(18px,4vw,40px);align-items:center;justify-content:space-between;flex-wrap:wrap;overflow:hidden}
+.cs-wrap h2{font-size:clamp(24px,3.4vw,36px);margin:8px 0 12px}
+.cs-wrap p.t{color:var(--ink-2);font-size:16px;line-height:1.7;max-width:60ch}
+.cs-tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.cs-tags span{font-size:13px;font-weight:600;padding:7px 13px;border-radius:99px;background:var(--surface-2);color:var(--hema)}
+
+.orbit{max-width:480px}
+.orbit canvas{position:absolute;inset:0;width:100%;height:100%;cursor:grab;touch-action:pan-y}
+.orbit canvas:active{cursor:grabbing}
+.gcap{position:absolute;left:50%;bottom:-6px;transform:translateX(-50%);display:flex;gap:10px;align-items:center;white-space:nowrap;padding:9px 18px;border-radius:999px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);font-size:14px;font-weight:600;color:#fff}
+.gcap b{font-family:var(--font-head);color:#ffd27a;font-size:16px}
+.slogan{font-family:var(--font-head);font-size:clamp(17px,2.2vw,22px);font-style:italic;color:#ffd27a;margin:-6px 0 22px;max-width:44ch;line-height:1.4}
+.punch{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1120px;margin:-30px auto 70px}
+.punch div{padding:20px 22px;border-radius:18px;background:linear-gradient(135deg,var(--deep),#241a66);color:#fff;font-family:var(--font-head);font-size:clamp(17px,2vw,21px);line-height:1.3;border:1px solid rgba(255,255,255,.12)}
+.punch small{display:block;margin-top:6px;font-family:var(--font-body,inherit);font-size:13px;opacity:.75;font-weight:400}
+.punch b{color:#ffd27a}
+.dang{margin-top:18px;padding:18px 18px 16px;border-radius:16px;background:linear-gradient(160deg,rgba(255,255,255,.1),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.2)}
+.dang .hk{font-family:var(--font-head);font-size:19px;line-height:1.3;color:#ffd27a;margin-bottom:12px}
+.dang h4{margin:0 0 10px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.dang ul{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.dang li{display:flex;gap:10px;align-items:flex-start;font-size:14px;line-height:1.45}
+.dang li i{flex:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,#ffd27a,#ff7ca8);color:#1b1440;font-style:normal;font-weight:800;font-size:12px;display:grid;place-items:center;margin-top:1px}
+@media(max-width:900px){.punch{grid-template-columns:1fr;margin-top:-10px}}
+@media(max-width:560px){.gcap{font-size:12.5px;padding:7px 14px}}
+
+#vi-sao,#doi-tuong{position:relative}
+#vi-sao::before{content:"";position:absolute;inset:-30px -40px;z-index:-1;border-radius:36px;background:radial-gradient(600px 300px at 10% 0,rgba(111,99,255,.14),transparent 70%),radial-gradient(600px 300px at 95% 100%,rgba(255,124,168,.14),transparent 70%)}
+.why .card,.aud .card{position:relative;overflow:hidden;border:none;padding:30px 28px 28px;color:#fff;counter-increment:cd}
+.why,.aud{counter-reset:cd}
+.why .card::before,.aud .card::before{content:"0" counter(cd);position:absolute;right:18px;top:6px;font-family:var(--font-head);font-weight:700;font-size:78px;line-height:1;color:rgba(255,255,255,.16)}
+.why .card::after,.aud .card::after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;left:-60px;bottom:-90px;background:rgba(255,255,255,.12)}
+.why .card>*,.aud .card>*{position:relative;z-index:1}
+.why .card h3,.aud .card h3{color:#fff;font-size:22px}
+.why .card p,.aud .card p{color:rgba(255,255,255,.9)}
+.why .card .ic{background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.35);box-shadow:0 8px 20px -8px rgba(0,0,0,.35)}
+.why .card:nth-child(1),.aud .card:nth-child(1){background:linear-gradient(135deg,#4f52c9,#8a5cf6);box-shadow:0 24px 40px -26px #4f52c9}
+.why .card:nth-child(2),.aud .card:nth-child(2){background:linear-gradient(135deg,#e0316f,#ff8a5c);box-shadow:0 24px 40px -26px #e0316f}
+.why .card:nth-child(3),.aud .card:nth-child(3){background:linear-gradient(135deg,#0e9f8e,#2f80ed);box-shadow:0 24px 40px -26px #0e9f8e}
+.aud .card h3::before{content:"";display:block;width:44px;height:5px;border-radius:5px;background:#ffd27a;margin-bottom:14px}
+.why .card:hover,.aud .card:hover{transform:translateY(-8px) scale(1.01)}
+
+.aud .card::before{font-size:64px;top:auto;bottom:-6px;right:16px;color:rgba(255,255,255,.18)}
+.aud .card{padding-bottom:34px}
+.cs-wrap{background:linear-gradient(135deg,#171a4a,#4a1d5e 60%,#d6366a);border:none;color:#fff}
+.cs-wrap::before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#ffd27a;filter:blur(110px);opacity:.25;right:-60px;top:-100px}
+.cs-wrap>*{position:relative}
+.cs-wrap .eyebrow{color:#ffd27a}.cs-wrap h2{color:#fff}.cs-wrap p.t{color:rgba(255,255,255,.88)}
+.cs-tags span{background:rgba(255,255,255,.16);color:#fff;border:1px solid rgba(255,255,255,.28)}
+.cs-wrap .btn.main{background:#fff;color:#33357a;box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
+</style>
+
+<div class="wrap">
+<div class="heroBg">
+  <div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div><canvas id="mol" aria-hidden="true"></canvas>
+  <header class="nav">
+    <a class="brand" href="#top" id="top"><img src="img/logo.jpg" alt="Logo Thầy Hùng Bio"><span>Thầy Hùng Bio<small>BIOLOGY · BDHSG</small></span></a>
+    <nav><ul><li><a href="#chuyen-de">9 chuyên đề</a></li><li><a href="#xem-thu">Xem thử</a></li><li><a href="#vi-sao">Vì sao chọn</a></li><li><a href="#doi-tuong">Dành cho ai</a></li><li><a href="#chuyen-sinh">20 đề Chuyên Sinh</a></li><li><a class="hot" href="#lien-he">Liên hệ</a></li></ul></nav>
+  </header>
+  <div class="hero">
+    <div>
+      <p class="pill rv"><i></i> Bồi dưỡng HSG · Chọn đội tuyển HSG quốc gia · THPT 10 – 11 – 12</p>
+      <h1 class="rv d1">Bộ tài liệu <span class="grad">Tinh Tú</span> bồi dưỡng HSG Sinh học</h1>
+      <p class="slogan rv d1">Câu hỏi khó không đáng sợ, khi đã có hướng giải rõ từng ý.</p>
+      <p class="lead rv d2">9 chuyên đề với hệ thống câu hỏi chuyên sâu, được nhiều giáo viên từ trường phổ thông đến trường chuyên sử dụng trong công tác bồi dưỡng đội tuyển.</p>
+      <div class="cta rv d3"><a class="btn main" href="#chuyen-de">Khám phá 9 chuyên đề →</a><a class="btn line" href="#lien-he">Nhận bộ tài liệu</a></div>
+    </div>
+    <div class="orbit rv d2"><canvas id="globe" aria-hidden="true"></canvas><div class="gcap" id="gcap"><b>9</b><span>chuyên đề Tinh Tú</span></div></div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat rv"><b data-n="9">0</b><span>chuyên đề</span></div>
+  <div class="stat rv d1"><b data-n="1801" data-f="1">0</b><span>câu hỏi chuyên sâu</span></div>
+  <div class="stat rv d2"><b data-n="1456" data-f="1">0</b><span>trang tài liệu</span></div>
+  <div class="stat rv d3"><b data-n="3">0</b><span>khối 10 · 11 · 12</span></div>
+</div>
+
+<div class="punch">
+  <div class="rv"><b>Đúng tầm</b> HSG quốc gia<small>Câu hỏi chuyên sâu, bám dạng thi chọn đội tuyển</small></div>
+  <div class="rv d1"><b>Rõ từng ý</b> chấm<small>Mỗi câu kèm đáp án chi tiết để đối chiếu</small></div>
+  <div class="rv d2"><b>Đủ 9</b> mảng kiến thức<small>Từ tế bào đến tiến hóa, dùng riêng hoặc theo lộ trình</small></div>
+</div>
+
+<div class="trust rv"><p>Bộ tài liệu được <em>nhiều giáo viên</em> từ <em>trường phổ thông đến trường chuyên</em> sử dụng trong công tác <em>bồi dưỡng đội tuyển</em>.</p></div>
+
+<section id="chuyen-de">
+  <div class="sec-head rv"><p class="eyebrow">9 chuyên đề</p><h2>Mỗi chuyên đề là một mũi nhọn của đội tuyển</h2><p>Bấm vào từng chuyên đề để chọn. Thanh bên dưới tự cộng tổng số câu và số trang cho bạn.</p></div>
+  <div class="filters rv" id="filters">
+    <button class="f" data-g="all" aria-pressed="true">Tất cả</button>
+    <button class="f" data-g="tb" aria-pressed="false">Tế bào · Vi sinh</button>
+    <button class="f" data-g="dt" aria-pressed="false">Di truyền</button>
+    <button class="f" data-g="sl" aria-pressed="false">Sinh lí</button>
+    <button class="f" data-g="st" aria-pressed="false">Sinh thái · Tiến hóa</button>
+  </div>
+  <div class="grid" id="grid"></div>
+  <div class="dock rv" id="dock"><div><b id="dsum">Chưa chọn chuyên đề nào</b><span id="dsub">Bấm vào các thẻ phía trên để chọn</span></div><a class="btn main" href="#lien-he">Nhận các chuyên đề đã chọn</a></div>
+</section>
+
+<section id="xem-thu">
+  <div class="sec-head rv"><p class="eyebrow">Xem thử</p><h2>Xem tận mắt trước khi quyết định</h2><p>Chọn một chuyên đề để xem các trang trong bộ tài liệu: đồ thị, hình, bảng số liệu kèm đáp án chi tiết. Chỉ trang cuối của mỗi chuyên đề được ẩn; toàn bộ trang có chữ bản quyền chạy phủ lên.</p></div>
+  <div class="viewer rv">
+    <div class="vtabs" role="tablist" aria-label="Chọn chuyên đề xem thử" id="vtabs"></div>
+    <div class="vbody">
+      <div>
+        <div class="pagebox"><div class="page" id="page">
+          <img id="pimg" alt="Trang xem thử" draggable="false">
+          <div class="wm" id="wm"></div>
+          <div class="ribbon"><span>© THẦY HÙNG BIO · KHÔNG SAO CHÉP · XEM THỬ · © THẦY HÙNG BIO · KHÔNG SAO CHÉP · XEM THỬ</span></div>
+          <div class="lock"><div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="10" width="16" height="11" rx="2.5"/><path d="M8 10V7a4 4 0 018 0v3"/></svg><b>Trang này dành cho bản đầy đủ</b><p>Liên hệ Thầy Hùng Bio để nhận chuyên đề đầy đủ.</p><a href="#lien-he">Nhận chuyên đề</a></div></div>
+          <div class="shieldmsg">Nội dung tạm ẩn khi bạn rời trang.<br>Quay lại trang để tiếp tục xem.</div>
+          <div class="zoomlens" id="zoom" title="Bấm để phóng to"></div>
+        </div></div>
+        <div class="ctl"><button id="prev" aria-label="Trang trước">‹</button><div class="prog"><i id="prog"></i></div><span class="cnt" id="cnt">1 / 1</span><button id="next" aria-label="Trang sau">›</button></div>
+      </div>
+      <aside class="side">
+        <h3 id="vtitle"></h3><p class="vm" id="vmeta"></p><p class="desc" id="vdesc"></p>
+        <div class="thumbs" id="thumbs"></div>
+        <div class="dang" id="vdang"></div>
+        <p class="tips">Bấm vào trang để phóng to. Trang cuối của mỗi chuyên đề được ẩn và chỉ đọc được trong bản đầy đủ.</p>
+      </aside>
+    </div>
+    <p class="legal">Nội dung xem thử thuộc bản quyền của Thầy Hùng Bio. Nghiêm cấm sao chép, chụp màn hình hoặc đăng tải lại.</p>
+  </div>
+</section>
+
+<section id="vi-sao">
+  <div class="sec-head rv"><p class="eyebrow">Vì sao chọn bộ tài liệu này</p><h2>Học đúng dạng, luyện đúng tầm</h2></div>
+  <div class="why">
+    <article class="card rv"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 5h16M4 12h16M4 19h10"/></svg></div><h3>Trọn 9 chuyên đề</h3><p>Từ tế bào học, vi sinh vật, di truyền, sinh lí đến sinh thái và tiến hóa. Mỗi mảng là một bộ riêng, dùng độc lập hoặc theo lộ trình.</p></article>
+    <article class="card rv d1"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3>Câu hỏi chuyên sâu</h3><p>Hơn 1.800 câu hỏi được hệ thống theo từng chuyên đề, giúp giáo viên có sẵn nguồn bài để dạy, kiểm tra và ra đề.</p></article>
+    <article class="card rv d2"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12l4 4L19 7"/></svg></div><h3>Dùng được ở mọi cấp trường</h3><p>Được giáo viên từ trường phổ thông đến trường chuyên sử dụng trong bồi dưỡng đội tuyển, cho cả khối 10, 11 và 12.</p></article>
+  </div>
+</section>
+
+<section id="doi-tuong">
+  <div class="sec-head rv"><p class="eyebrow">Dành cho ai</p><h2>Một bộ tài liệu, ba đối tượng cùng được lợi</h2></div>
+  <div class="aud">
+    <article class="card rv"><h3>Giáo viên bồi dưỡng đội tuyển</h3><p>Có sẵn hệ thống câu hỏi theo chuyên đề, tiết kiệm thời gian soạn bài và xây dựng lộ trình ôn luyện.</p></article>
+    <article class="card rv d1"><h3>Học sinh khối 10 – 11 – 12</h3><p>Luyện sâu từng mảng kiến thức, làm quen các dạng câu hỏi khó trong thi chọn HSG.</p></article>
+    <article class="card rv d2"><h3>Tổ chuyên môn, trường chuyên</h3><p>Nguồn tham khảo đồng bộ để dùng chung cho cả đội tuyển và các lớp bồi dưỡng.</p></article>
+  </div>
+</section>
+
+<section id="chuyen-sinh">
+  <div class="cs-wrap rv">
+    <div>
+      <p class="eyebrow">Cùng tác giả</p>
+      <h2>Bộ 20 đề Chuyên Sinh học 2026 – 2027</h2>
+      <p class="t">Ngoài bộ Tinh Tú ôn chọn đội tuyển HSG quốc gia, Thầy Hùng Bio còn biên soạn bộ 20 đề luyện thi vào lớp 10 THPT chuyên Sinh học, phiên bản mới nhất, kèm hướng dẫn chấm chi tiết.</p>
+      <div class="cs-tags"><span>20 đề</span><span>160 câu</span><span>150 phút</span><span>Có hướng dẫn chấm</span></div>
+    </div>
+    <a class="btn main" href="https://hungbiology8888-create.github.io/thayhungbio-chuyensinh" target="_blank" rel="noopener">Xem bộ 20 đề Chuyên Sinh →</a>
+  </div>
+</section>
+
+<section id="lien-he">
+  <div class="contact rv">
+    <div>
+      <div class="person"><img src="img/logo.jpg" alt="Thầy Hùng Bio"><div><b>Thầy Hùng Bio</b><span>Biên soạn bộ tài liệu BDHSG</span></div></div>
+      <h2>Nhận bộ tài liệu Tinh Tú</h2>
+      <p class="lead">Nhắn thầy qua Facebook hoặc Zalo để được tư vấn và nhận các chuyên đề bạn cần.</p>
+      <div class="chan">
+        <a class="ch fb" href="https://www.facebook.com/ThayHungBio999" target="_blank" rel="noopener"><span class="logo"><svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M14 8V6.5c0-.7.3-1 1.1-1H17V2h-2.7C11.6 2 10 3.7 10 6.2V8H7.5v3.5H10V22h4V11.5h2.7L17 8z"/></svg></span><span>Facebook · ThayHungBio999<small>Bấm để mở trang Facebook của thầy</small></span><span class="arr">→</span></a>
+        <button class="ch zl" id="zbtn" type="button"><span class="logo">Zalo</span><span>Zalo · Hùng Bio<small>Bấm để hiện mã QR, quét bằng Zalo để kết bạn</small></span><span class="arr">→</span></button>
+      </div>
+    </div>
+    <div><div class="qrcard"><img src="img/zalo.jpg" alt="Mã QR Zalo của Hùng Bio" draggable="false"><p>Quét mã bằng Zalo<small>Danh thiếp Zalo · Hùng Bio</small></p></div></div>
+  </div>
+</section>
+<footer><span>© Thầy Hùng Bio · Bộ tài liệu BDHSG Tinh Tú</span><span><a href="https://hungbiology8888-create.github.io/thayhungbio-chuyensinh" target="_blank" rel="noopener">Bộ 20 đề Chuyên Sinh</a> · Mọi nội dung thuộc bản quyền của tác giả.</span></footer>
+</div>
+<div class="fab"><a class="f1" href="https://www.facebook.com/ThayHungBio999" target="_blank" rel="noopener" aria-label="Facebook">f</a><a class="z" href="#lien-he" aria-label="Zalo">Zalo</a></div>
+<div class="lb" id="lb" role="dialog" aria-modal="true"><button class="x" id="lbx" aria-label="Đóng">×</button><div class="inner"><div class="page" id="lpage"><img id="limg" alt="" draggable="false"><div class="wm" id="lwm"></div><div class="ribbon"><span>© THẦY HÙNG BIO · KHÔNG SAO CHÉP · © THẦY HÙNG BIO · KHÔNG SAO CHÉP</span></div></div></div></div>
+<div class="lb" id="qrm" role="dialog" aria-modal="true"><button class="x" id="qrx" aria-label="Đóng">×</button><div class="qrcard"><img src="img/zalo.jpg" alt="Mã QR Zalo" draggable="false"><p>Mở Zalo → Quét mã QR<small>Kết bạn với Hùng Bio</small></p></div></div>
+
+<script>
+(function(){
+  var $=function(s){return document.querySelector(s)};
+  var D=[
+   {n:1,g:'tb',t:'Tế bào học',s:'Hệ thống câu hỏi chuyên sâu',v:'VIP5',c:220,p:207},
+   {n:2,g:'tb',t:'Vi sinh vật học',s:'Hệ thống câu hỏi chuyên sâu',v:'VIP6',c:200,p:165},
+   {n:3,g:'dt',t:'Di truyền và Biến dị',s:'Cơ chế di truyền phân tử',v:'',c:110,p:98},
+   {n:4,g:'dt',t:'Quy luật & Kỹ thuật di truyền',s:'Hệ thống câu hỏi chuyên sâu',v:'VIP7',c:130,p:119},
+   {n:5,g:'sl',t:'Sinh lí thực vật',s:'Hệ thống câu hỏi chuyên sâu',v:'VIP1',c:339,p:276},
+   {n:6,g:'sl',t:'Sinh lí động vật',s:'Hệ thống câu hỏi chuyên sâu',v:'VIP2',c:339,p:234},
+   {n:7,g:'st',t:'Sinh thái học',s:'Hệ thống câu hỏi chuyên sâu',v:'VIP4',c:212,p:155},
+   {n:8,g:'st',t:'Di truyền quần thể & Tiến hóa',s:'Hệ thống câu hỏi chuyên sâu',v:'VIP3',c:130,p:96},
+   {n:9,g:'dt',t:'Di truyền phả hệ',s:'Các câu di truyền người thi HSG',v:'',c:121,p:106}
+  ];
+  var fmt=function(x){return x.toLocaleString('vi-VN')};
+  var grid=$('#grid'),sel={};
+  D.forEach(function(d){
+    var b=document.createElement('button');b.className='cd';b.type='button';b.dataset.g=d.g;b.setAttribute('aria-pressed','false');
+    b.innerHTML='<span class="num">'+('0'+d.n).slice(-2)+'</span><span class="vip'+(d.v?'':' n')+'">'+(d.v||'TINH TÚ')+'</span><h3>'+d.t+'</h3><p class="sub">'+d.s+'</p><div class="nums"><div><b>'+d.c+'</b><span>câu hỏi</span></div><div><b>'+d.p+'</b><span>trang</span></div></div><div class="bar"><i data-w="'+(d.c/339*100)+'"></i></div><div class="pick">Chọn chuyên đề này</div>';
+    b.onclick=function(){var on=b.getAttribute('aria-pressed')!=='true';b.setAttribute('aria-pressed',on);if(on)sel[d.n]=d;else delete sel[d.n];dock()};
+    grid.appendChild(b);d.el=b;
+  });
+  function dock(){
+    var k=Object.keys(sel),c=0,p=0;k.forEach(function(i){c+=sel[i].c;p+=sel[i].p});
+    $('#dsum').textContent=k.length?('Đã chọn '+k.length+' chuyên đề'):'Chưa chọn chuyên đề nào';
+    $('#dsub').textContent=k.length?(fmt(c)+' câu hỏi · '+fmt(p)+' trang'):'Bấm vào các thẻ phía trên để chọn';
+  }
+  [].forEach.call(document.querySelectorAll('.f'),function(f){f.onclick=function(){
+    [].forEach.call(document.querySelectorAll('.f'),function(x){x.setAttribute('aria-pressed',x===f)});
+    D.forEach(function(d){d.el.hidden=!(f.dataset.g==='all'||f.dataset.g===d.g)});
+  }});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var t=e.target;t.classList.add('in');io.unobserve(t);
+    var b=t.querySelector('[data-n]');if(b)count(b);
+    if(t.id==='grid')[].forEach.call(t.querySelectorAll('.bar i'),function(i){i.style.width=i.dataset.w+'%'})}})},{threshold:.12});
+  [].forEach.call(document.querySelectorAll('.rv'),function(e){io.observe(e)});
+  io.observe(grid);
+  function count(b){var n=+b.dataset.n,f=b.dataset.f,t0=performance.now();(function s(t){var p=Math.min(1,(t-t0)/1500),v=Math.round(n*(1-Math.pow(1-p,3)));b.textContent=f?fmt(v):v;if(p<1)requestAnimationFrame(s)})(t0)}
+  /* viewer */
+  var PG={tb:['tb_1',0,'tb_2',0,'tb_3',0,'tb_4',0,'tb_5',0,'tb_6b',1],vsv:['vsv_1',0,'vsv_2',0,'vsv_3',0,'vsv_4',0,'vsv_5',0,'vsv_6b',1],sltv:['sltv_1',0,'sltv_2',0,'sltv_3',0,'sltv_4',0,'sltv_5',0,'sltv_6',0,'sltv_7b',1],sldv:['sldv_1',0,'sldv_2',0,'sldv_3',0,'sldv_4',0,'sldv_5',0,'sldv_6',0,'sldv_7',0,'sldv_8b',1],dtqt:['dtqt_1',0,'dtqt_2',0,'dtqt_3',0,'dtqt_4',0,'dtqt_5',0,'dtqt_6b',1],st:['st_1',0,'st_2',0,'st_3',0,'st_4',0,'st_5',0,'st_6b',1],ccdt:['ccdt_1',0,'ccdt_2',0,'ccdt_3',0,'ccdt_4',0,'ccdt_5',0,'ccdt_6',0,'ccdt_7b',1],ph:['ph_1',0,'ph_2',0,'ph_3',0,'ph_4',0,'ph_5',0,'ph_6b',1],qldt:['qldt_1',0,'qldt_2',0,'qldt_3',0,'qldt_4',0,'qldt_5',0,'qldt_6b',1]};
+  var V=[
+   {k:'tb',n:'01',t:'Tế bào học',s:'Tế bào',m:'220 câu · 207 trang',d:'Thụ thể EGFR, enzyme và chất ức chế, chuỗi vận chuyển electron, ty thể.'},
+   {k:'vsv',n:'02',t:'Vi sinh vật học',s:'Vi sinh vật',m:'200 câu · 165 trang',d:'Đồ thị kháng thể SARS-CoV-2, test nhanh, vi khuẩn MRSA, pH môi trường.'},
+   {k:'ccdt',n:'03',t:'Di truyền và Biến dị',s:'Cơ chế di truyền',m:'110 câu · 98 trang',d:'Đột biến gene, bảng mã di truyền, điều hòa operon tryptophan.'},
+   {k:'qldt',n:'04',t:'Quy luật & Kỹ thuật di truyền',s:'Quy luật di truyền',m:'130 câu · 119 trang',d:'Transposon P, bản đồ di truyền, phép lai Arabidopsis và hoa vườn.'},
+   {k:'sltv',n:'05',t:'Sinh lí thực vật',s:'Sinh lí thực vật',m:'339 câu · 276 trang',d:'Đường cong quang hợp, hàm lượng chlorophyll, cây gọng vó, thực vật vùng mặn.'},
+   {k:'sldv',n:'06',t:'Sinh lí động vật',s:'Sinh lí động vật',m:'339 câu · 234 trang',d:'Điện thế hoạt động, độc tố và kênh ion, tuần hoàn, hô hấp.'},
+   {k:'st',n:'07',t:'Sinh thái học',s:'Sinh thái',m:'212 câu · 155 trang',d:'Thằn lằn xâm lấn, sinh khối thực vật phù du, ốc bươu vàng.'},
+   {k:'dtqt',n:'08',t:'Di truyền quần thể & Tiến hóa',s:'DT quần thể – Tiến hóa',m:'130 câu · 96 trang',d:'Dòng gene, bảng số liệu quần thể, chọn lọc và cách li sinh sản.'},
+   {k:'ph',n:'09',t:'Di truyền phả hệ',s:'Phả hệ',m:'121 câu · 106 trang',d:'Phả hệ một và hai bệnh, tính xác suất, tương tác gene.'}
+  ];
+  var DG={"tb": ["Nhìn đồ thị là thấy hướng giải.", ["Thụ thể EGFR và truyền tin tế bào", "Enzyme: chất ức chế, động học", "Chuỗi vận chuyển electron, ATP synthase", "Chuyển hóa glucose, glycogen", "Phân tích thí nghiệm có số liệu"]], "vsv": ["Đọc đúng thí nghiệm, kết luận đúng bản chất.", ["Đồ thị kháng thể, xét nghiệm nhanh", "Sinh trưởng vi khuẩn, môi trường nuôi cấy", "Kháng sinh, MRSA, cơ chế kháng thuốc", "Virus và thí nghiệm phage", "Kiểu dinh dưỡng, chuyển hóa vi sinh vật"]], "ccdt": ["Từ trình tự đến cơ chế, từng bước một.", ["Đột biến gene và bảng mã di truyền", "Điều hòa operon Lac, Trp", "Phiên mã, dịch mã, promoter", "Điện di, lai Southern", "Suy luận đột biến từ kiểu hình"]], "qldt": ["Bài khó nhất thường nằm ở dạng này.", ["Transposon, bản đồ di truyền", "Hoán vị gene và tính tần số", "Tương tác gene, phép lai hoa", "Kỹ thuật di truyền, vector", "Điện di, phân tích DNA"]], "sltv": ["Thấy đường cong là nói được cơ chế.", ["Đường cong quang hợp theo ánh sáng", "Chlorophyll và quang hệ", "Hô hấp, quang hô hấp", "Dinh dưỡng khoáng, nitơ", "Thích nghi của thực vật đặc biệt"]], "sldv": ["Điện thế, kênh ion, tuần hoàn: hiểu sâu mới chắc.", ["Điện thế hoạt động và kênh ion", "Độc tố thần kinh, synapse", "Chu kì tim, huyết áp", "Hô hấp và vận chuyển khí", "Nội tiết, điều hòa sinh lí"]], "st": ["Biến số nào đổi, quần xã đổi theo.", ["Cạnh tranh, loài xâm lấn", "Kích thước và sinh khối quần thể", "Chuỗi, lưới thức ăn", "Chu trình carbon, nitơ", "Đa dạng loài, chỉ số Shannon"]], "dtqt": ["Số liệu quần thể: tính nhanh, biện luận chắc.", ["Cân bằng Hardy – Weinberg", "Chọn lọc, dòng gene, phiêu bạt", "Cách li sinh sản, hình thành loài", "Phân tích bảng số liệu quần thể", "Cây phát sinh chủng loại"]], "ph": ["Phả hệ khó đến đâu, có quy trình là giải được.", ["Phả hệ một bệnh, hai bệnh", "Tính xác suất sinh con", "Liên kết gene, hoán vị trong phả hệ", "Tương tác gene trong phả hệ", "Biện luận kiểu gene từ sơ đồ"]]};
+  var NM=["Tế bào học","Vi sinh vật học","Di truyền và Biến dị","Quy luật & Kỹ thuật di truyền","Sinh lí thực vật","Sinh lí động vật","Sinh thái học","Di truyền quần thể & Tiến hóa","Di truyền phả hệ"];
+  var cur=0,idx=0,tabs=$('#vtabs');
+  V.forEach(function(v,i){var b=document.createElement('button');b.className='vt';b.setAttribute('role','tab');b.textContent=v.n+' · '+v.s;b.onclick=function(){cur=i;idx=0;render(1)};tabs.appendChild(b);v.b=b});
+  function pg(v){var a=PG[v.k],r=[];for(var i=0;i<a.length;i+=2)r.push([a[i],a[i+1]]);return r}
+  function render(sw){
+    var v=V[cur],P=pg(v),p=P[idx],pe=$('#page');
+    V.forEach(function(x,i){x.b.setAttribute('aria-selected',i===cur)});
+    var dg=DG[v.k];$('#vdang').innerHTML='<p class="hk">“'+dg[0]+'”</p><h4>Dạng trọng tâm</h4><ul>'+dg[1].map(function(x,i){return '<li><i>'+(i+1)+'</i><span>'+x+'</span></li>'}).join('')+'</ul>';$('#vtitle').textContent=v.t;$('#vmeta').textContent=v.m;$('#vdesc').textContent=v.d;
+    if(sw)pe.classList.add('swap');
+    setTimeout(function(){$('#pimg').src='img/'+p[0]+'.jpg';pe.classList.toggle('locked',!!p[1]);pe.classList.remove('swap')},sw?180:0);
+    $('#cnt').textContent=(idx+1)+' / '+P.length;$('#prog').style.width=((idx+1)/P.length*100)+'%';
+    var th=$('#thumbs');th.innerHTML='';
+    P.forEach(function(q,i){var b=document.createElement('button');b.className='th'+(i===idx?' on':'')+(q[1]?' lk':'');b.setAttribute('aria-label','Trang '+(i+1));var im=new Image();im.src='img/'+q[0]+'.jpg';im.draggable=false;b.appendChild(im);b.onclick=function(){idx=i;render(1)};th.appendChild(b)});
+  }
+  $('#prev').onclick=function(){var n=pg(V[cur]).length;idx=(idx-1+n)%n;render(1)};
+  $('#next').onclick=function(){var n=pg(V[cur]).length;idx=(idx+1)%n;render(1)};
+  function fillWM(el){var h='',row='';for(var i=0;i<8;i++)row+='<span>THẦY HÙNG BIO</span>';for(var r=0;r<14;r++)h+='<div style="margin-left:-'+((r*97)%300)+'px">'+row+'</div>';el.innerHTML=h}
+  fillWM($('#wm'));fillWM($('#lwm'));render(0);
+  $('#zoom').onclick=function(){var p=pg(V[cur])[idx];if(p[1])return;$('#limg').src='img/'+p[0]+'.jpg';$('#lb').classList.add('open')};
+  $('#lbx').onclick=function(){$('#lb').classList.remove('open')};$('#lb').onclick=function(e){if(e.target===this)this.classList.remove('open')};
+  [].forEach.call(document.querySelectorAll('.page,.th'),function(el){el.addEventListener('contextmenu',function(e){e.preventDefault()});el.addEventListener('dragstart',function(e){e.preventDefault()})});
+  var shield=function(on){[$('#page'),$('#lpage')].forEach(function(p){p.classList.toggle('shield',on)})};
+  document.addEventListener('visibilitychange',function(){shield(document.hidden)});addEventListener('blur',function(){shield(true)});addEventListener('focus',function(){shield(false)});
+  /* orbit */
+  var gc=$('#globe'),gx=gc.getContext('2d'),GW,GH,dpr=Math.min(2,window.devicePixelRatio||1),rot=0,vel=.004,drag=false,lx=0,tilt=.42,gcap=$('#gcap');
+  var N=620,P=[];for(var q=0;q<N;q++){var y=1-2*(q+.5)/N,rr=Math.sqrt(1-y*y),th=q*2.399963;P.push([Math.cos(th)*rr,y,Math.sin(th)*rr])}
+  var NL=[[.55,0],[-.25,.7],[.4,1.4],[-.5,2.1],[.2,2.8],[.6,3.5],[-.3,4.2],[.35,4.9],[-.55,5.6]];
+  function ll(a,b){return [Math.cos(a)*Math.cos(b),Math.sin(a),Math.cos(a)*Math.sin(b)]}
+  var NP=NL.map(function(n){return ll(n[0],n[1])});
+  function gs(){GW=gc.width=gc.offsetWidth*dpr;GH=gc.height=gc.offsetHeight*dpr}
+  function pj(p,R){var c=Math.cos(rot),s=Math.sin(rot),x=p[0]*c+p[2]*s,z=-p[0]*s+p[2]*c,y=p[1],ct=Math.cos(tilt),st=Math.sin(tilt),y2=y*ct-z*st,z2=y*st+z*ct;return [GW/2+x*R,GH/2*0.94+y2*R,z2]}
+  function slerp(a,b,t){var d=Math.max(-1,Math.min(1,a[0]*b[0]+a[1]*b[1]+a[2]*b[2])),o=Math.acos(d),so=Math.sin(o)||1,k1=Math.sin((1-t)*o)/so,k2=Math.sin(t*o)/so,l=1+.14*Math.sin(Math.PI*t);return [(a[0]*k1+b[0]*k2)*l,(a[1]*k1+b[1]*k2)*l,(a[2]*k1+b[2]*k2)*l]}
+  var tt=0,lastN=-1;
+  function gd(){tt+=.016;var R=Math.min(GW,GH)*.36;gx.clearRect(0,0,GW,GH);
+    var cx=GW/2,cy=GH/2*.94,g=gx.createRadialGradient(cx-R*.3,cy-R*.35,R*.1,cx,cy,R*1.5);g.addColorStop(0,'rgba(140,125,255,.55)');g.addColorStop(.45,'rgba(70,60,190,.22)');g.addColorStop(1,'rgba(70,60,190,0)');gx.fillStyle=g;gx.beginPath();gx.arc(cx,cy,R*1.5,0,7);gx.fill();
+    var b=gx.createRadialGradient(cx-R*.35,cy-R*.4,R*.05,cx,cy,R);b.addColorStop(0,'rgba(120,105,255,.35)');b.addColorStop(1,'rgba(20,18,70,.55)');gx.fillStyle=b;gx.beginPath();gx.arc(cx,cy,R,0,7);gx.fill();gx.strokeStyle='rgba(190,185,255,.35)';gx.lineWidth=1.2*dpr;gx.stroke();
+    for(var i=0;i<N;i++){var p=pj(P[i],R),a=(p[2]+1)/2;gx.fillStyle='rgba('+(170+a*70|0)+','+(165+a*60|0)+',255,'+(.12+a*.6)+')';var rd=(.7+a*1.3)*dpr;gx.fillRect(p[0]-rd/2,p[1]-rd/2,rd,rd)}
+    for(var k=0;k<2;k++){gx.beginPath();for(var u=0;u<=64;u++){var an=u/64*6.2832,e=k?[Math.cos(an)*1.28,Math.sin(an)*.0,Math.sin(an)*1.28]:[Math.cos(an)*1.18,0,Math.sin(an)*1.18],c1=Math.cos(k?.9:-.5),s1=Math.sin(k?.9:-.5),ee=[e[0]*c1-e[1]*s1,e[0]*s1+e[1]*c1,e[2]],pp=pj(ee,R);u?gx.lineTo(pp[0],pp[1]):gx.moveTo(pp[0],pp[1])}gx.strokeStyle=k?'rgba(255,124,168,.35)':'rgba(255,210,122,.32)';gx.lineWidth=1.1*dpr;gx.setLineDash([2*dpr,7*dpr]);gx.lineDashOffset=-tt*30*dpr;gx.stroke();gx.setLineDash([])}
+    for(var n=0;n<9;n++){var A=NP[n],B=NP[(n+1)%9];gx.beginPath();var pr=[];for(var u=0;u<=24;u++){var pp=pj(slerp(A,B,u/24),R);pr.push(pp)}
+      for(var u=0;u<pr.length;u++){u?gx.lineTo(pr[u][0],pr[u][1]):gx.moveTo(pr[u][0],pr[u][1])}
+      var mid=pr[12][2];gx.strokeStyle='rgba(255,210,150,'+(mid>-.2?.5:.12)+')';gx.lineWidth=1.3*dpr;gx.stroke()}
+    var arr=NP.map(function(v,i){var p=pj(v,R);p.i=i;return p}).sort(function(a,b){return a[2]-b[2]}),fr=null;
+    arr.forEach(function(p){var a=(p[2]+1)/2,front=p[2]>0,rad=(13+a*8)*dpr;
+      var gl=gx.createRadialGradient(p[0],p[1],0,p[0],p[1],rad*2.2);gl.addColorStop(0,'rgba(255,170,130,'+(.55*a)+')');gl.addColorStop(1,'rgba(255,170,130,0)');gx.fillStyle=gl;gx.beginPath();gx.arc(p[0],p[1],rad*2.2,0,7);gx.fill();
+      var f=gx.createLinearGradient(p[0]-rad,p[1]-rad,p[0]+rad,p[1]+rad);f.addColorStop(0,front?'#ffd27a':'#6a67b8');f.addColorStop(1,front?'#ff7ca8':'#3b3a85');gx.globalAlpha=.35+.65*a;gx.fillStyle=f;gx.beginPath();gx.arc(p[0],p[1],rad,0,7);gx.fill();gx.strokeStyle='rgba(255,255,255,.7)';gx.lineWidth=1.2*dpr;gx.stroke();
+      gx.fillStyle=front?'#241a66':'#fff';gx.font='800 '+(rad*.85|0)+'px Be Vietnam Pro,system-ui,sans-serif';gx.textAlign='center';gx.textBaseline='middle';gx.fillText(('0'+(p.i+1)).slice(-2),p[0],p[1]+dpr*.5);gx.globalAlpha=1;
+      if(!fr||p[2]>fr[2])fr=p});
+    if(fr&&fr.i!==lastN){lastN=fr.i;gcap.innerHTML='<b>'+('0'+(fr.i+1)).slice(-2)+'</b><span>'+NM[fr.i]+'</span>'}
+    if(!drag)vel+=((rm2?0:.004)-vel)*.03;rot+=vel;if(!rm2)requestAnimationFrame(gd)}
+  var rm2=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  gs();addEventListener('resize',gs);
+  gc.addEventListener('pointerdown',function(e){drag=true;lx=e.clientX;gc.setPointerCapture(e.pointerId)});
+  gc.addEventListener('pointermove',function(e){if(drag){vel=(e.clientX-lx)*.0045;lx=e.clientX}});
+  gc.addEventListener('pointerup',function(){drag=false});gc.addEventListener('pointercancel',function(){drag=false});
+  gd();
+  $('#zbtn').onclick=function(){$('#qrm').classList.add('open')};$('#qrx').onclick=function(){$('#qrm').classList.remove('open')};
+  $('#qrm').onclick=function(e){if(e.target===this)this.classList.remove('open')};
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'){$('#qrm').classList.remove('open');$('#lb').classList.remove('open')}});
+  /* molecule canvas */
+  var c=$('#mol'),g=c.getContext('2d'),W,H,pts=[];function rs(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight;pts=[];for(var i=0;i<Math.min(46,W/24);i++)pts.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35})}rs();addEventListener('resize',rs);
+  var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function draw(){g.clearRect(0,0,W,H);pts.forEach(function(p){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1});
+    for(var i=0;i<pts.length;i++){for(var j=i+1;j<pts.length;j++){var dx=pts[i].x-pts[j].x,dy=pts[i].y-pts[j].y,d=Math.sqrt(dx*dx+dy*dy);if(d<130){g.strokeStyle='rgba(255,255,255,'+(.22*(1-d/130))+')';g.beginPath();g.moveTo(pts[i].x,pts[i].y);g.lineTo(pts[j].x,pts[j].y);g.stroke()}}
+      g.fillStyle=i%3?'rgba(160,150,255,.8)':'rgba(255,124,168,.85)';g.beginPath();g.arc(pts[i].x,pts[i].y,2.6,0,7);g.fill()}
+    if(!rm)requestAnimationFrame(draw)}
+  draw();
+})();
+</script>
+
+</html>
